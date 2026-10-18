@@ -1,42 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 76" fill="none" width="100%" height="100%">
-  <!-- Icon Mark: Precision Wrench & Shield Emblem with India Tricolour Subtle Touch -->
-  <g transform="translate(4, 6)">
-    <!-- Outer Shield / Dial Frame -->
-    <rect x="2" y="2" width="60" height="60" rx="14" fill="#071F49"/>
-    <rect x="2" y="2" width="60" height="60" rx="14" stroke="#16A6F5" stroke-width="2" stroke-opacity="0.3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" width="100%" height="100%">
+  <defs>
+    <!-- Headset Ear-Cup Dynamic Blue Gradient -->
+    <linearGradient id="earcupGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="45%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#082F49" />
+    </linearGradient>
+
+    <!-- Speed Dial Arrow Dynamic Blue to Cyan Gradient -->
+    <linearGradient id="arrowArcGradDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="60%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <!-- Number 7 India Tricolour Diagonal Gradient -->
+    <linearGradient id="tricolourGradDark" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="40%" stop-color="#FB923C" />
+      <stop offset="55%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#16A34A" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+
+    <!-- Number 7 Top Bar Solid Bright Blue -->
+    <linearGradient id="sevenTopGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Circular Headset & 247 Speed-Dial Emblem -->
+  <g id="emblemGroupDark">
+    <!-- Speedometer Clock Ticks (Dark Navy on Light BG) -->
+    <g class="clock-ticks" stroke="#0F172A" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <line x1="110" y1="36" x2="110" y2="44" />
+      <line x1="134" y1="44" x2="130" y2="51" />
+      <line x1="154" y1="62" x2="148" y2="67" />
+      <line x1="86" y1="44" x2="90" y2="51" />
+      <line x1="68" y1="64" x2="74" y2="68" />
+    </g>
+
+    <!-- Center Clock Pivot and Hand Indicator -->
+    <g class="clock-hand">
+      <circle cx="108" cy="65" r="5" fill="#0F172A" />
+      <line x1="108" y1="65" x2="127" y2="42" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+    </g>
+
+    <!-- Cyan/Blue Speedometer Arc with Arrow Head -->
+    <g class="speed-arc">
+      <path d="M 64 68 A 54 54 0 0 1 158 54" fill="none" stroke="url(#arrowArcGradDark)" stroke-width="6" stroke-linecap="round" />
+      <polygon points="152,43 166,56 150,64" fill="#0EA5E9" />
+    </g>
+
+    <!-- Customer Support Headset Band & Microphone -->
+    <!-- Headband arc wrapping around the dial -->
+    <path d="M 40 85 A 64 64 0 0 1 125 15" fill="none" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
     
-    <!-- Dynamic Speed Dial Arc in Brand Blue & Saffron -->
-    <path d="M 12 40 A 22 22 0 1 1 52 40" stroke="#087FF5" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 46 22 A 22 22 0 0 1 52 40" stroke="#FF9933" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Left Ear Cushion -->
+    <rect x="22" y="70" width="18" height="50" rx="9" fill="url(#earcupGradDark)" stroke="#0F172A" stroke-width="1.5" />
     
-    <!-- Crossed Precision Service Tools: Wrench & Screwdriver -->
-    <!-- Wrench -->
-    <path d="M 23 45 L 37 31 M 34 28 C 34 24 37 22 41 23 C 42 24.5 42 26.5 40 28 L 38 30 L 41 33 L 39 35 L 36 32 L 34 34 C 32 36 30 36 29 35 C 30 31 32 28 34 28 Z" 
-          fill="#16A6F5" stroke="#FFFFFF" stroke-width="0.8" stroke-linejoin="round"/>
-    <!-- Headphone Support Arc -->
-    <path d="M 20 36 A 14 14 0 0 1 44 36" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
-    <rect x="18" y="34" width="4.5" height="9" rx="2" fill="#FFFFFF"/>
-    <rect x="41.5" y="34" width="4.5" height="9" rx="2" fill="#138A50"/>
+    <!-- Microphone Arm curving to mouth -->
+    <path d="M 38 108 C 40 142, 70 152, 98 152" fill="none" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
+    <rect x="94" y="145" width="22" height="14" rx="7" fill="#0F172A" />
+
+    <!-- Big Bold 247 Numbers -->
+    <!-- Number 2 -->
+    <text x="47" y="125" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="64" fill="#0F172A" letter-spacing="-2">2</text>
+    <!-- Number 4 -->
+    <text x="82" y="125" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="64" fill="#0F172A" letter-spacing="-2">4</text>
+    
+    <!-- Number 7 with Blue Top Bar & India Tricolour Leg -->
+    <!-- Top Horizontal Bar of 7 -->
+    <path d="M 132 75 L 168 75 L 168 87 L 146 87 Z" fill="url(#sevenTopGradDark)" />
+    <!-- Diagonal Slanted Leg of 7 with Indian Flag Gradient -->
+    <polygon points="146,87 168,87 137,135 125,135" fill="url(#tricolourGradDark)" />
   </g>
 
-  <!-- Typography: NATIONAL SERVICE CENTRE -->
-  <g transform="translate(78, 14)">
-    <!-- Top Wordmark -->
-    <text x="0" y="24" font-family="'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5" fill="#071F49">
-      NATIONAL
-    </text>
-    <text x="108" y="24" font-family="'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5" fill="#087FF5">
-      SERVICE
+  <!-- Right Typography: Customer Support - INDIA - -->
+  <g transform="translate(186, 0)">
+    <!-- 'Customer' line -->
+    <text x="0" y="80" font-family="'Poppins', 'Montserrat', sans-serif" font-weight="800" font-size="34" letter-spacing="-0.8" fill="#0F172A">
+      Customer
     </text>
     
-    <!-- Bottom Subline -->
-    <text x="0" y="44" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="10.5" letter-spacing="3.2" fill="#52647D">
-      CENTRE
+    <!-- 'Support' line -->
+    <text x="0" y="120" font-family="'Poppins', 'Montserrat', sans-serif" font-weight="800" font-size="36" letter-spacing="-0.8" fill="#0F172A">
+      Support
     </text>
-    <line x1="68" y1="40.5" x2="168" y2="40.5" stroke="#DCE4EF" stroke-width="1.5"/>
-    <circle cx="174" cy="40.5" r="2.5" fill="#FF9933"/>
-    <text x="182" y="44" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="9" letter-spacing="1.5" fill="#138A50">
-      INDIA
-    </text>
+
+    <!-- Subtitle: — INDIA — -->
+    <g transform="translate(0, 142)">
+      <line x1="0" y1="-5" x2="32" y2="-5" stroke="#475569" stroke-width="2.5" stroke-linecap="round" />
+      <text x="40" y="0" font-family="'Inter', sans-serif" font-weight="700" font-size="16" letter-spacing="7" fill="#475569">
+        INDIA
+      </text>
+      <line x1="126" y1="-5" x2="160" y2="-5" stroke="#475569" stroke-width="2.5" stroke-linecap="round" />
+    </g>
   </g>
 </svg>

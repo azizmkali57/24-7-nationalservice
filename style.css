@@ -9,9 +9,10 @@
    01. DESIGN TOKENS
    -------------------------------------------------------------------------- */
 :root {
-  /* Brand Colours (Strictly adhering to prompt) */
-  --color-primary-yellow: #F7CE24;
-  --color-primary-yellow-hover: #e5bd15;
+  /* Brand Colours (Updated to White & Royal Blue Palette) */
+  --color-primary-yellow: #1E60D5;
+  --color-primary-yellow-hover: #154CB0;
+  --color-primary-blue-light: #EBF2FE;
   --color-charcoal-dark: #17191C;
   --color-charcoal-secondary: #25272A;
   --color-charcoal-muted: #32353A;
@@ -221,12 +222,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-yellow {
   background-color: var(--color-primary-yellow);
-  color: var(--color-charcoal-dark);
+  color: var(--color-white);
 }
 .btn-yellow:hover {
   background-color: var(--color-primary-yellow-hover);
-  color: var(--color-charcoal-dark);
-  box-shadow: 0 4px 12px rgba(247, 206, 36, 0.35);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(30, 96, 213, 0.4);
 }
 
 .btn-charcoal {
@@ -281,62 +282,70 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------------------------------------------------------------------
    05. HEADER & NAVIGATION (Ampvex layered header)
    -------------------------------------------------------------------------- */
-/* A. Top Announcement Bar (Slim Yellow Strip) */
+/* A. Top Announcement Bar (Slim Blue Continuous Rotating Ticker) */
 .top-announcement-bar {
   background-color: var(--color-primary-yellow);
-  color: var(--color-charcoal-dark);
+  color: var(--color-white);
   font-size: 12.5px;
   font-weight: 600;
-  padding: 7px 0;
+  padding: 8px 0;
   position: relative;
   z-index: 101;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.announcement-inner {
+.announcement-marquee-track {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  width: max-content;
+  animation: marquee-rotate 28s linear infinite;
 }
 
-.announcement-left {
-  display: flex;
+.top-announcement-bar:hover .announcement-marquee-track {
+  animation-play-state: paused;
+}
+
+.announcement-marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(24px, 3.5vw, 48px);
+  padding-right: clamp(24px, 3.5vw, 48px);
+  flex-shrink: 0;
+}
+
+.announcement-item {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
-.announcement-left svg {
-  width: 15px;
-  height: 15px;
-  color: var(--color-charcoal-dark);
-  flex-shrink: 0;
-}
-
-.announcement-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.announcement-contact-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.announcement-contact-item svg {
+.announcement-item svg {
   width: 14px;
   height: 14px;
-  color: var(--color-charcoal-dark);
+  color: var(--color-white);
   flex-shrink: 0;
 }
 
-.announcement-contact-item a {
-  color: var(--color-charcoal-dark);
+.announcement-item a {
+  color: var(--color-white);
   font-weight: 700;
-}
-.announcement-contact-item a:hover {
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.announcement-separator {
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+@keyframes marquee-rotate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* B. Main Navigation Header */
@@ -366,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-logo-img {
-  height: 48px;
+  height: 54px;
   width: auto;
   object-fit: contain;
 }
@@ -452,14 +461,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------------------------------------------------------------------------
-   06. SECTION 03 — HERO (AMPVEX ASYMMETRICAL CHARCOAL/IMAGE COMPOSITION)
+   06. SECTION 03 — HERO (PREMIUM NAVY SAPPHIRE & APPLIANCE COMPOSITION)
    -------------------------------------------------------------------------- */
 .ampvex-hero-section {
   position: relative;
-  background-color: var(--color-charcoal-dark);
+  background: radial-gradient(circle at 15% 50%, #172554 0%, #0F172A 55%, #0B1120 100%);
   color: var(--color-white);
   overflow: hidden;
   min-height: 520px;
+}
+
+.ampvex-hero-section::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: 20%;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(30, 96, 213, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-full-wrap,
@@ -492,7 +513,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--color-primary-yellow);
+  color: #60A5FA;
   margin-bottom: 14px;
 }
 
@@ -506,12 +527,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-headline .text-highlight-yellow {
-  color: var(--color-primary-yellow);
+  color: #93C5FD;
+  background: linear-gradient(135deg, #BFDBFE 0%, #60A5FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-description {
   font-size: clamp(14.5px, 1.2vw, 16px);
-  color: #D1D5DB;
+  color: #CBD5E1;
   line-height: 1.6;
   margin-bottom: 28px;
   max-width: 500px;
@@ -530,9 +554,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 16px;
   padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 13px;
-  color: #CAD5E2;
+  color: #94A3B8;
   flex-wrap: wrap;
 }
 
@@ -545,7 +569,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-trust-item svg {
   width: 15px;
   height: 15px;
-  color: var(--color-primary-yellow);
+  color: #60A5FA;
   flex-shrink: 0;
 }
 
@@ -571,7 +595,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, var(--color-charcoal-dark) 0%, rgba(23, 25, 28, 0.45) 25%, transparent 65%);
+  background: linear-gradient(to right, #0F172A 0%, rgba(15, 23, 42, 0.45) 30%, transparent 70%);
   pointer-events: none;
   z-index: 1;
 }
@@ -1103,9 +1127,9 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 184, 0, 0.15);
-  border: 1px solid rgba(255, 184, 0, 0.4);
-  color: #B45309;
+  background: rgba(30, 96, 213, 0.1);
+  border: 1px solid rgba(30, 96, 213, 0.3);
+  color: #1E60D5;
   padding: 5px 14px;
   border-radius: 999px;
   font-size: 12px;
@@ -1268,9 +1292,12 @@ h1, h2, h3, h4, h5, h6 {
    -------------------------------------------------------------------------- */
 .featured-cta-banner {
   position: relative;
-  background-color: var(--color-charcoal-dark);
+  background-color: #0F172A;
   color: var(--color-white);
-  padding: 80px 0;
+  padding: clamp(90px, 9vw, 130px) 0;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -1280,13 +1307,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.35;
+  object-position: center 12%;
+  opacity: 0.42;
 }
 
 .banner-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(23, 25, 28, 0.95) 0%, rgba(23, 25, 28, 0.8) 60%, rgba(23, 25, 28, 0.4) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.94) 0%,
+    rgba(15, 23, 42, 0.85) 45%,
+    rgba(15, 23, 42, 0.48) 75%,
+    rgba(15, 23, 42, 0.35) 100%
+  );
 }
 
 .banner-content {
@@ -1759,7 +1793,7 @@ textarea.form-control {
 }
 
 .footer-logo-img {
-  height: 48px;
+  height: 54px;
   width: auto;
   object-fit: contain;
 }
@@ -1985,14 +2019,11 @@ textarea.form-control {
 /* Tablet Portrait & Smartphones (<= 768px) */
 @media (max-width: 768px) {
   .top-announcement-bar {
-    font-size: 11.5px;
-    padding: 6px 0;
+    font-size: 12px;
+    padding: 7px 0;
   }
-  .announcement-right {
-    gap: 12px;
-  }
-  .announcement-email {
-    display: none;
+  .announcement-marquee-track {
+    animation-duration: 22s;
   }
 
   .nav-desktop-menu,
@@ -2074,7 +2105,7 @@ textarea.form-control {
   }
 
   .hero-image-col::before {
-    background: linear-gradient(to top, var(--color-charcoal-dark) 0%, transparent 60%);
+    background: linear-gradient(to top, #0F172A 0%, transparent 60%);
   }
 
   .quick-request-form {
@@ -2663,7 +2694,7 @@ textarea.form-control {
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 184, 0, 0.35);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(30, 96, 213, 0.35);
 }
 
 .process-step-card:hover {
@@ -2673,8 +2704,8 @@ textarea.form-control {
 
 .stat-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-yellow-primary);
-  box-shadow: 0 14px 28px -6px rgba(255, 184, 0, 0.2);
+  border-color: var(--color-primary-yellow);
+  box-shadow: 0 14px 28px -6px rgba(30, 96, 213, 0.25);
 }
 
 /* Floating Emergency Action Badges */
@@ -2884,8 +2915,8 @@ textarea.form-control {
 }
 
 .legal-nav-list a:hover {
-  background-color: rgba(255, 184, 0, 0.12);
-  color: #92400E;
+  background-color: rgba(30, 96, 213, 0.08);
+  color: #1E60D5;
   transform: translateX(4px);
 }
 

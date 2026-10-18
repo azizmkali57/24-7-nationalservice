@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * NATIONAL SERVICE CENTRE — CONTROLLER & VALIDATOR (Vanilla JavaScript ES6+)
+ * 24x7 CUSTOMER SUPPORT — CONTROLLER & VALIDATOR (Vanilla JavaScript ES6+)
  * Handlers: Sticky Header, Mobile Drawer Navigation, Quick Enquiry Form,
  * FAQ Accordion, Gallery, Booking Validation, and WhatsApp Dispatch
  * ============================================================================
@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. IMMEDIATE SERVICE ENQUIRY FORM (BELOW HERO)
   // --------------------------------------------------------------------------
   const quickEnquiryForm = document.getElementById('quickEnquiryForm');
-  const BUSINESS_PHONE_RAW = '916300454801';
-  const BUSINESS_PHONE_DISPLAY = '+91 63004 54801';
+  const BUSINESS_PHONE_RAW = '18002026249';
+  const BUSINESS_PHONE_DISPLAY = '1800 202 6249';
 
   if (quickEnquiryForm) {
     quickEnquiryForm.addEventListener('submit', (e) => {
@@ -182,12 +182,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Pre-compose WhatsApp request
       const message = 
 `*NEW QUICK SERVICE ENQUIRY*
-*National Service Centre*
+*24x7 Customer Support*
 --------------------------------
 *Customer:* ${nameInput.value.trim()}
 *Phone:* ${phoneDigits}
 *Appliance:* ${applianceSelect.value}
-*Locality:* ${locationInput.value.trim()}
+*Location / City:* ${locationInput.value.trim()}
 --------------------------------
 Please confirm available technician slot.`;
 
@@ -255,7 +255,7 @@ Please confirm available technician slot.`;
       const locEl = document.getElementById('mainLocation');
       const locErr = document.getElementById('mainLocationError');
       if (!locEl.value.trim()) {
-        setFieldError(locEl, locErr, 'Please enter your locality in Hyderabad / Secunderabad.');
+        setFieldError(locEl, locErr, 'Please enter your city and locality.');
         isValid = false;
       } else {
         clearFieldError(locEl, locErr);
@@ -276,13 +276,13 @@ Please confirm available technician slot.`;
 
       const waMessage = 
 `*NEW REPAIR BOOKING REQUEST*
-*National Service Centre*
+*24x7 Customer Support*
 --------------------------------
 *Customer:* ${nameEl.value.trim()}
 *Phone:* ${phoneDigits}
 *Appliance:* ${mainApplianceSelect.value}
 *Brand:* ${brandVal}
-*Locality:* ${locEl.value.trim()}
+*City / Locality:* ${locEl.value.trim()}
 *Preferred Time:* ${timeVal}
 *Issue Description:* ${issueVal}
 --------------------------------
