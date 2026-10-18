@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Haier Authentic Corporate Royal Blue Logotype -->
+  <!-- Two Red Emblem Dots on top of Haier icon -->
+  <g fill="#005A9C">
+    <!-- H -->
+    <path d="M25 18 H40 V37 H64 V18 H79 V62 H64 V49 H40 V62 H25 Z"/>
+    <!-- a -->
+    <path d="M90 32 H104 V37 C108 33 114 31 122 31 C135 31 143 39 143 51 V62 H129 V52 C129 45 125 42 118 42 C111 42 104 46 104 53 V62 H90 Z"/>
+    <!-- i -->
+    <circle cx="158" cy="22" r="7" fill="#E60012"/>
+    <path d="M151 32 H165 V62 H151 Z"/>
+    <!-- e -->
+    <path d="M178 47 C178 37 186 31 199 31 C212 31 220 38 220 50 V53 H192 C193 57 197 60 203 60 C208 60 212 58 214 55 L224 60 C219 66 211 70 201 70 C187 70 178 61 178 47 Z M206 45 C206 40 203 38 199 38 C194 38 192 41 192 45 Z"/>
+    <!-- r -->
+    <path d="M232 32 H246 V39 C249 34 255 31 262 31 V45 C255 45 246 47 246 54 V62 H232 Z"/>
+  </g>
+</svg>

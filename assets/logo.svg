@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 76" fill="none" width="100%" height="100%">
+  <!-- Icon Mark: Precision Wrench & Shield Emblem with India Tricolour Subtle Touch -->
+  <g transform="translate(4, 6)">
+    <!-- Outer Shield / Dial Frame -->
+    <rect x="2" y="2" width="60" height="60" rx="14" fill="#071F49"/>
+    <rect x="2" y="2" width="60" height="60" rx="14" stroke="#16A6F5" stroke-width="2" stroke-opacity="0.3"/>
+    
+    <!-- Dynamic Speed Dial Arc in Brand Blue & Saffron -->
+    <path d="M 12 40 A 22 22 0 1 1 52 40" stroke="#087FF5" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 46 22 A 22 22 0 0 1 52 40" stroke="#FF9933" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Crossed Precision Service Tools: Wrench & Screwdriver -->
+    <!-- Wrench -->
+    <path d="M 23 45 L 37 31 M 34 28 C 34 24 37 22 41 23 C 42 24.5 42 26.5 40 28 L 38 30 L 41 33 L 39 35 L 36 32 L 34 34 C 32 36 30 36 29 35 C 30 31 32 28 34 28 Z" 
+          fill="#16A6F5" stroke="#FFFFFF" stroke-width="0.8" stroke-linejoin="round"/>
+    <!-- Headphone Support Arc -->
+    <path d="M 20 36 A 14 14 0 0 1 44 36" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    <rect x="18" y="34" width="4.5" height="9" rx="2" fill="#FFFFFF"/>
+    <rect x="41.5" y="34" width="4.5" height="9" rx="2" fill="#138A50"/>
+  </g>
+
+  <!-- Typography: NATIONAL SERVICE CENTRE -->
+  <g transform="translate(78, 14)">
+    <!-- Top Wordmark -->
+    <text x="0" y="24" font-family="'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5" fill="#071F49">
+      NATIONAL
+    </text>
+    <text x="108" y="24" font-family="'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5" fill="#087FF5">
+      SERVICE
+    </text>
+    
+    <!-- Bottom Subline -->
+    <text x="0" y="44" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="10.5" letter-spacing="3.2" fill="#52647D">
+      CENTRE
+    </text>
+    <line x1="68" y1="40.5" x2="168" y2="40.5" stroke="#DCE4EF" stroke-width="1.5"/>
+    <circle cx="174" cy="40.5" r="2.5" fill="#FF9933"/>
+    <text x="182" y="44" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="9" letter-spacing="1.5" fill="#138A50">
+      INDIA
+    </text>
+  </g>
+</svg>

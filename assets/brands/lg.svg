@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <!-- LG Electronics Signature Brand Heritage Color Scheme -->
+  <!-- LG Smiling Face Emblem in Heritage Carmine Red -->
+  <circle cx="45" cy="40" r="28" fill="#A50034"/>
+  <!-- Stylized 'L' & 'G' White Outline Inside Circle -->
+  <path d="M42 22 C32 22 25 29 25 40 C25 51 32 58 42 58 C51 58 57 52 58 43 L54 43 C53 49 48 54 42 54 C34 54 29 48 29 40 C29 32 34 26 42 26 C47 26 51 29 53 34 L57 34 C55 27 49 22 42 22 Z" fill="#FFFFFF"/>
+  <path d="M41 30 H45 V49 H53 V52 H41 Z" fill="#FFFFFF"/>
+  <circle cx="36" cy="35" r="3.2" fill="#FFFFFF"/>
+  <!-- LG Dark Charcoal Gray Wordmark -->
+  <text x="88" y="52" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="40" font-weight="800" fill="#231F20" letter-spacing="2">LG</text>
+</svg>

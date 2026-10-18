@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <!-- IFB Distinct Red Circle Emblem -->
+  <circle cx="42" cy="40" r="26" fill="#ED1C24"/>
+  <!-- Inner White Swirl Motif -->
+  <path d="M42 22 C32 22 24 30 24 40 C24 50 32 58 42 58 C49 58 55 54 57 48 C55 51 50 53 45 53 C37 53 31 47 31 40 C31 33 37 27 45 27 C51 27 56 31 57 37 L51 37 C50 34 47 32 44 32 C39 32 36 36 36 40 C36 44 39 48 44 48 C48 48 51 45 51 42 L42 42 L42 38 L57 38 C57 39 58 40 58 41 C58 50 50 58 42 58" fill="#FFFFFF"/>
+  <!-- IFB Bold Red Logotype -->
+  <text x="80" y="52" font-family="'Poppins', 'Arial Black', sans-serif" font-size="38" font-weight="900" fill="#ED1C24" letter-spacing="3">IFB</text>
+  <text x="82" y="66" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700" fill="#2D3748" letter-spacing="2">APPLIANCES</text>
+</svg>

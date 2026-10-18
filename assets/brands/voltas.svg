@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Voltas Official Tata Enterprise Brand Identity Vector -->
+  <g fill="#003580">
+    <!-- V -->
+    <path d="M22 18 L36 62 H49 L63 18 H49 L42.5 44.5 L36 18 Z"/>
+    <!-- O -->
+    <path d="M96 17 C78 17 67 29.5 67 40 C67 50.5 78 63 96 63 C114 63 125 50.5 125 40 C125 29.5 114 17 96 17 Z M96 29 C104 29 110 34 110 40 C110 46 104 51 96 51 C88 51 82 46 82 40 C82 34 88 29 96 29 Z"/>
+    <!-- L -->
+    <path d="M134 18 H148 V50 H175 V62 H134 Z"/>
+    <!-- T -->
+    <path d="M178 18 H224 V29.5 H208 V62 H194 V29.5 H178 Z"/>
+    <!-- A -->
+    <path d="M242 18 L227 62 H241 L244 52 H262 L265 62 H279 L264 18 H242 Z M247 42 L253 26 L259 42 H247 Z"/>
+    <!-- S -->
+    <path d="M288 28.5 C291 26 295.5 24.5 301 24.5 C308 24.5 312 28 312 32.5 C312 37 307.5 39.5 299 42 C288.5 45 281 49 281 55 C281 61.5 288.5 63 297 63 C304 63 310 61 315 57 L311 48 C307 51 302 52.5 297 52.5 C291 52.5 287.5 50 287.5 46.5 C287.5 42.5 291.5 40.5 300 38 C310.5 35 318 31 318 24.5 C318 18.5 311 15 301 15 C294.5 15 287.5 17.5 282.5 21 Z"/>
+  </g>
+  <!-- Tata endorsement tagline -->
+  <text x="170" y="75" font-family="'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="600" fill="#718096" letter-spacing="2.5" text-anchor="middle">A TATA ENTERPRISE</text>
+</svg>

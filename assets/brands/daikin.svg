@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Daikin Official Emblem (Cyan triangle + dark navy inner wedge) -->
+  <polygon points="15,58 60,18 15,18" fill="#0097E6"/>
+  <polygon points="26,58 48,38 26,38" fill="#002D62"/>
+  <!-- Daikin Italic Geometric Logotype in Vibrant Sky Blue -->
+  <g fill="#0097E6" font-family="'Arial Black', 'Trebuchet MS', sans-serif" font-style="italic" font-weight="900" font-size="38" letter-spacing="3">
+    <text x="75" y="52">DAIKIN</text>
+  </g>
+</svg>

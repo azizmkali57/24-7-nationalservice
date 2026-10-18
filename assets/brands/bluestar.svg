@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Blue Star Star Mark -->
+  <polygon points="42,16 48,32 65,32 51,43 56,60 42,49 28,60 33,43 19,32 36,32" fill="#00529B"/>
+  <!-- BLUE STAR Brand Logotype -->
+  <text x="82" y="47" font-family="'Poppins', 'Montserrat', Arial, sans-serif" font-size="28" font-weight="800" fill="#00529B" letter-spacing="1.5">BLUE STAR</text>
+  <text x="83" y="66" font-family="'Inter', Arial, sans-serif" font-size="9" font-weight="600" fill="#4A5568" letter-spacing="3.5">AIR CONDITIONING &amp; REFRIGERATION</text>
+</svg>
